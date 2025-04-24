@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "83826254561",
+    "project_id": "appterapiaia",
+    "storage_bucket": "appterapiaia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83826254561:android:d2e48cf4206d8747f8cda0",
+        "android_client_info": {
+          "package_name": "com.app.teraphy.spain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTZUoqSamTrjvZ_1iEYYARh1d0cx5OaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

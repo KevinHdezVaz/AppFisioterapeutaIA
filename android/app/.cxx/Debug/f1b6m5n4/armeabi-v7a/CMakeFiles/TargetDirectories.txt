@@ -1,0 +1,2 @@
+/Users/1143911/Documents/Quickl_V5.0_Source_Code/QuicklAI - App/QuicklAI-product-5.0/android/app/.cxx/Debug/f1b6m5n4/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/1143911/Documents/Quickl_V5.0_Source_Code/QuicklAI - App/QuicklAI-product-5.0/android/app/.cxx/Debug/f1b6m5n4/armeabi-v7a/CMakeFiles/rebuild_cache.dir

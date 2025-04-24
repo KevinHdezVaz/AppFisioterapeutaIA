@@ -1,0 +1,2 @@
+/Users/1143911/Documents/ProyectoTerapiaIA/AppMovil/android/app/.cxx/Debug/2t1i6q15/x86/CMakeFiles/edit_cache.dir
+/Users/1143911/Documents/ProyectoTerapiaIA/AppMovil/android/app/.cxx/Debug/2t1i6q15/x86/CMakeFiles/rebuild_cache.dir
