@@ -1,13 +1,13 @@
 buildscript {
-    ext.kotlin_version = '1.9.10'
+ext.kotlin_version = '2.1.0' // Actualizado
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.15'
         classpath 'com.android.tools.build:gradle:8.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
@@ -15,15 +15,14 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url "/Users/1143911/Downloads/flutter/packages/flutter_tools/gradle"
-        }
     }
 }
 
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
     project.evaluationDependsOn(':app')
 }
 

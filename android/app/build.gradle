@@ -1,7 +1,7 @@
 plugins {
     id "com.android.application"
-    id "kotlin-android"
     id "com.google.gms.google-services"
+    id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
@@ -17,9 +17,16 @@ def flutterVersionCode = localProperties.getProperty('flutter.versionCode') ?: '
 def flutterVersionName = localProperties.getProperty('flutter.versionName') ?: '1.0'
 
 android {
-    compileSdkVersion 34
-    ndkVersion "23.1.7779620"
     namespace "com.app.teraphy.spain"
+    compileSdkVersion 35 // Alineado con el proyecto que funciona
+    ndkVersion flutter.ndkVersion // Alineado con el proyecto que funciona
+
+    configurations {
+        all {
+            exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+            exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -59,9 +66,12 @@ flutter {
 
 dependencies {
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0"
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.multidex:multidex:2.0.1'
-    // Opcional: si usas Firebase
+    implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation platform('com.google.firebase:firebase-bom:33.5.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.android.gms:play-services-ads:23.4.0'
 }

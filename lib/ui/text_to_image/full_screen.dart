@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
- import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
@@ -24,9 +24,9 @@ class ImageView extends StatefulWidget {
 }
 
 class _ImageViewState extends State<ImageView> {
-final CarouselSliderController _controller = CarouselSliderController();
-  
-    int _currentIndex = 0;
+  final CarouselSliderController _controller = CarouselSliderController();
+
+  int _currentIndex = 0;
 
   @override
   void initState() {
@@ -39,8 +39,8 @@ final CarouselSliderController _controller = CarouselSliderController();
     return Scaffold(
       backgroundColor: ConstantColors.background,
       appBar: AppBar(
-        title: Text('Image'.tr), 
-        centerTitle: true, 
+        title: Text('Image'.tr),
+        centerTitle: true,
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -56,14 +56,15 @@ final CarouselSliderController _controller = CarouselSliderController();
                 InkWell(
                   onTap: () async {
                     ShowToastDialog.showLoader('Please wait ....'.tr);
-                    http.Response response = await http.get(Uri.parse(widget.imageList[_currentIndex].url.toString()));
+                    http.Response response = await http.get(Uri.parse(
+                        widget.imageList[_currentIndex].url.toString()));
 
                     final directory = await getTemporaryDirectory();
                     final path = directory.path;
                     final file = File('$path/image.png');
                     file.writeAsBytes(response.bodyBytes);
                     ShowToastDialog.closeLoader();
-                    Share.shareFiles(['$path/image.png']);
+                    //    Share.shareFiles(['$path/image.png']);
                   },
                   child: const Icon(Icons.share),
                 ),
@@ -131,9 +132,8 @@ final CarouselSliderController _controller = CarouselSliderController();
                         Text(
                           'Download'.tr,
                           style: const TextStyle(
-                            color: Colors.white70, 
-                            fontWeight: FontWeight.w500
-                          ),
+                              color: Colors.white70,
+                              fontWeight: FontWeight.w500),
                         ),
                       ],
                     ),

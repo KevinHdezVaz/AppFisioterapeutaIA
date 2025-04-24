@@ -1,0 +1,1 @@
+ E:\\Users\\1143911\\Documents\\AppFisioterapeutaIA\\.dart_tool\\flutter_build\\c6549e956e3f8ff7083090a2b9a6005f\\native_assets.yaml: 

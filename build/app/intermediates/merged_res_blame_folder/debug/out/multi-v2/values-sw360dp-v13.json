@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.app.teraphy.spain.app-mergeDebugResources-64:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "E:\\Users\\1143911\\.gradle\\caches\\transforms-3\\d9d7082d1e7e1a15e41ec15828902cf3\\transformed\\preference-1.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}
